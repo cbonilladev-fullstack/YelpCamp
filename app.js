@@ -1,22 +1,23 @@
 require('dotenv').config();
 
-var express = require("express"),
-    app = express(),
-    bodyParser = require("body-parser"),
-    mongoose = require("mongoose"),
-    flash = require("connect-flash"),
-    passport = require("passport"),
+var express     = require("express"),
+    app         = express(),
+    bodyParser  = require("body-parser"),
+    mongoose    = require("mongoose"),
+    flash       = require("connect-flash"),
+    passport    = require("passport"),
     LocalStrategy = require("passport-local"),
     methodOverride = require("method-override"),
-    Campground = require("./models/campground"),
-    Comment = require("./models/comment"),
-    User = require("./models/user"),
-    seedDB = require("./seeds")
+    Campground  = require("./models/campground"),
+    Comment     = require("./models/comment"),
+    User        = require("./models/user"),
+    seedDB      = require("./seeds")
     
 //Requiring Routes
-var commentRoutes = require("./routes/comments"),
+var commentRoutes    = require("./routes/comments"),
+    reviewRoutes     = require("./routes/reviews"),
     campgroundRoutes = require("./routes/campgrounds"),
-    indexRoutes = require("./routes/index")
+    indexRoutes      = require("./routes/index")
      
 mongoose.connect("mongodb://localhost/yelp_camp_v12");
 app.use(bodyParser.urlencoded({extended: true}));
@@ -49,6 +50,7 @@ app.use(function(req, res, next) {
 app.use("/", indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
+app.use("/campgrounds/:id/reviews", reviewRoutes);
 
 app.listen(process.env.PORT, process.env.IP, function()  {
     console.log("Your Yelpcamp server is served!");

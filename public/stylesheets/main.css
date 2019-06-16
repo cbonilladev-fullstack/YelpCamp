@@ -82,3 +82,12 @@ img {
 #searchbox {
   justify-content: center;
 }
+
+#delete-form {
+    display: inline;
+}
+
+.checked {
+    color: orange;
+    margin-bottom: 1rem;
+}
