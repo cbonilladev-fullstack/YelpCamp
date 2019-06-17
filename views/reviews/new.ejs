@@ -1,9 +1,9 @@
 <% include ../partials/header %>
 <div class="container">
-    <div class="row">
-        <h1 style="text-align: center">New Review: <%= campground.name %></h1>
-        <div style="width: 30%; margin: 25px auto;">
-            <form action="/campgrounds/<%= campground._id %>/reviews" method="POST">
+    <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                 <h1>New Review: <%= campground.name %></h1>
+                <form action="/campgrounds/<%= campground._id %>/reviews" class="form-signin" method="POST">
                 <div class="form-group">
                     <label for="rating">Leave a rating:</label>
                     <fieldset class="starability-basic form-group" id="rating">
