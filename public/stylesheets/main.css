@@ -91,3 +91,13 @@ img {
     color: orange;
     margin-bottom: 1rem;
 }
+
+/* Flexbox grid fix */
+.flex-wrap {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+#pagenav {
+  margin-top: 1rem;
+}
