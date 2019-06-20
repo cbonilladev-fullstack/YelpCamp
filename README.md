@@ -8,10 +8,12 @@ This course not only provided a great base learning experience, it also sprinkle
 
 # What I Learned
 
-* Creating and managing a full stack website. 
-* What a "stack" is. 
-* Stripe (or other online chargin) functionality and website integration.
-* Ruby and Ruby On Rails syntax. 
+* Managing both login and show functionality. 
+* Maintaining functionality across multiple pages. 
+* Proper error handling.  
+* Basic webapp debugging.
 * Git commit and branch handling. 
+* StackOverflow posting guildines and proper usage. 
+* Long-term project planning and commitment.
 
 
