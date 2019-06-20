@@ -2,7 +2,7 @@
 
 Full stacks project based on Colt Steele's "The Web Developer Bootcamp" course on Udemy. 
 Given its strong fundamentals, concise instruction, and insistence on documentation use, it's no wonder Colt's Udemy course is one of its most popular. 
-This course not only provided a great base learning experience, it also sprinkled key workflow and mindset exercises to use in real-world development enviornments.
+This course not only provided a great base learning experience, it also sprinkled key workflow and debugging exercises to use in real-world development enviornments.
 
 **Required languages**: HTML, CSS, JS, Node JS, Express, Mongoose, Mongo
 
