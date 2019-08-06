@@ -3,39 +3,27 @@
 <div class="row">
     <div class="col-md-12">
     <form class="form-signin" action="/register" method="POST">
-<div class="form-group">
-                    <label for="rating">Leave a rating:</label>
-                    <fieldset class="starability-basic form-group" id="rating">
-                    <div>
-                    <input type="radio" id="first-rate5" name="review[rating]" value="5" checked />
-                    <label for="first-rate5" title="5 stars - Amazing">
-                        <%- '<span class="fa fa-star checked"></span>'.repeat(5) %>
-                    </label>
-                    </div>
-                    <div>
-                    <input type="radio" id="first-rate4" name="review[rating]" value="4" />
-                    <label for="first-rate4" title="4 stars - Very good">
-                        <%- '<span class="fa fa-star checked"></span>'.repeat(4) %>
-                    </label>
-                    </div>
-                    <div>
-                    <input type="radio" id="first-rate3" name="review[rating]" value="3" />
-                    <label for="first-rate3" title="3 stars - Average">
-                        <%- '<span class="fa fa-star checked"></span>'.repeat(3) %>
-                    </label>
-                    </div>
-                    <div>
-                    <input type="radio" id="first-rate2" name="review[rating]" value="2" />
-                    <label for="first-rate2" title="2 stars - Not good">
-                        <%- '<span class="fa fa-star checked"></span>'.repeat(2) %>
-                    </label>
-                    </div>
-                    <div>
-                    <input type="radio" id="first-rate1" name="review[rating]" value="1" />
-                    <label for="first-rate1" title="1 star - Terrible">
-                        <%- '<span class="fa fa-star checked"></span>'.repeat(1) %>
-                    </label>
-                </div>
+            <h1 class="h3 mb-3 font-weight-normal">Please Sign Up!</h1>
+            <label for="inputUsername" class="sr-only">Username</label>
+            <input type="text" id="inputUsername" class="form-control" name="username" placeholder="Username" required autofocus>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" style="margin-bottom: 0px;" required>
+            <br>
+            <label for="inputfirstName" class="sr-only">First Name</label>
+            <input type="text" id="inputfirstName" class="form-control" name="firstName" placeholder="First Name" required autofocus>
+            <label for="inputlastName" class="sr-only">Last Name</label>
+            <input type="text" id="inputlastName" class="form-control" name="lastName" placeholder="Last Name" required>
+            <label for="inputEmail" class="sr-only">Email</label>
+            <input type="email" id="inputEmail" class="form-control" name="email" placeholder="Email" required autofocus>
+            <label for="inputAvatar" class="sr-only">Avatar URL</label>
+            <br>
+            <input type="text" id="inputAvatar" class="form-control" name="avatar" placeholder="Avatar URL" required>
+            <label for="adminCode" class="sr-only">Admin Code</label>
+            <input type="text" id="inputadminCode" class="form-control" name="adminCode" placeholder="Admin Code" style="margin-bottom: 10px" required>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up!</button>
+            </form>
+            <div class="form-signin">
+            <a href="/campgrounds">Go Back</a>
         </div>
     </div>
 </div>
